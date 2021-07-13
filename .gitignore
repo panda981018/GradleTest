@@ -2,7 +2,6 @@ HELP.md
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
-!gradle/wrapper/dists/gradle-7.1.1-bin.zip
 !**/src/main/**/build/
 !**/src/test/**/build/
 
