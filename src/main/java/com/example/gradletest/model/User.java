@@ -19,12 +19,12 @@ public class User {
     @Id
     private String userId;
     private String userPw;
-    private String userAge;
+    private String userRole;
 
-    public User(String userId, String userPw, String userAge) {
+    public User(String userId, String userPw, String userRole) {
         this.userId = userId;
         this.userPw = userPw;
-        this.userAge = userAge;
+        this.userRole = userRole;
     }
 
 }

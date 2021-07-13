@@ -38,7 +38,7 @@ public class UserController {
     public ResponseEntity<User> postUser(@RequestBody User user) {
         try {
             User _user
-                    = userRepository.save(new User(user.getUserId(), user.getUserPw(), user.getUserAge()));
+                    = userRepository.save(new User(user.getUserId(), user.getUserPw(), user.getUserRole()));
 
             return new ResponseEntity<>(_user, HttpStatus.CREATED);
         } catch (Exception e) {
